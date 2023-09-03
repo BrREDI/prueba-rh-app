@@ -1,0 +1,20 @@
+<form>
+  <div class="imgcontainer">
+    <img src="assets/usuario.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+
+    <label for="name"><b>Nombre</b></label>
+    <input type="text" [(ngModel)]="newUser.name" placeholder="Ingrese su nombre" name="name" required>
+
+    <label for="uname"><b>Usuario</b></label>
+    <input type="text" [(ngModel)]="newUser.email" placeholder="Ingrese nombre de usuario" name="uname" required>
+
+    <label for="psw"><b>Contraseña</b></label>
+    <input type="password" [(ngModel)]="newUser.password" placeholder="Contraseña" name="psw" required>
+
+    <button (click)="createUser()" type="submit">Crear usuario</button>
+  </div>
+
+</form>

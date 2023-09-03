@@ -1,0 +1,15 @@
+<form>
+  <div class="container">
+    <label for="uname"><b>Title</b></label>
+    <input type="text" [(ngModel)]="newTask.title" placeholder="Ingrese titulo" name="uname" required>
+
+    <label for="uname"><b>Description</b></label>
+    <input type="text" [(ngModel)]="newTask.description" placeholder="Ingrese descripcion" name="uname" required>
+
+    <label for="uname"><b>Status</b></label>
+    <input type="text" [(ngModel)]="newTask.status" placeholder="Ingrese status" name="uname" required>
+
+    <button (click)="onSaveTask()" type="submit">Crear tarea</button>
+  </div>
+
+</form>

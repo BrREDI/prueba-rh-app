@@ -1,0 +1,30 @@
+form {
+  border: 3px solid #f1f1f1;
+  border-radius: 12px;
+}
+
+.imgcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 24px 0 12px 0;
+  width: 30%;
+  margin:auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  padding: 16px;
+  width: 40%;
+  margin:auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .imgcontainer{
+    width: 20%;
+  }
+}

@@ -1,0 +1,22 @@
+<form>
+  <div class="container">
+
+    <label for="uid"><b>Id</b></label>
+    <input type="text" [(ngModel)]="newTask.id" placeholder="Ingrese ID" name="uid" required>
+
+    <label for="utitle"><b>Title</b></label>
+    <input type="text" [(ngModel)]="newTask.title" placeholder="Ingrese titulo" name="utitle" required>
+
+    <label for="udesc"><b>Description</b></label>
+    <input type="text" [(ngModel)]="newTask.description" placeholder="Ingrese descripcion" name="udesc" required>
+
+    <label for="ustat"><b>Status</b></label>
+    <input type="text" [(ngModel)]="newTask.status" placeholder="Ingrese status" name="ustat" required>
+
+    <label for="ucrea"><b>Create at</b></label>
+    <input type="text" [(ngModel)]="newTask.create_at" placeholder="Ingrese fecha" name="ucrea" required>
+
+    <button (click)="onUpdateTask()" type="submit">Actualizar tarea</button>
+  </div>
+
+</form>
