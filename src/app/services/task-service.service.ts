@@ -26,5 +26,9 @@ export class TaskServiceService {
     return this.http.put<Task>(this.apiUrl.concat(task.id.toString()),task);
   }
 
+  deleteTask(id:number){
+    return this.http.delete(this.apiUrl.concat(id.toString()));
+  }
+
 }
 

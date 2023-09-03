@@ -13,8 +13,17 @@
         <p>Status: {{ task.status }}</p>
         <p>Created_at: {{ task.create_at }}</p>
         <p>Updated_at: {{ task.update_at }}</p>
+        <button (click)="onDelete(task.id)" type="button" class="cancelbtn">Borrar tarea</button>
       </li>
     </ul>
   </div>
+
+  <hr>
+  <div class="container">
+    <button (click)="onAddTask()" type="button">Agregar tarea</button>
+    <button (click)="onEditTask()" type="button">Editar tarea</button>
+    <button (click)="onExit()" type="button">Regresar</button>
+  </div>
+
 
 </form>

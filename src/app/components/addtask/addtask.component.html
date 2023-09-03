@@ -10,6 +10,9 @@
     <input type="text" [(ngModel)]="newTask.status" placeholder="Ingrese status" name="uname" required>
 
     <button (click)="onSaveTask()" type="submit">Crear tarea</button>
+    <p>{{message}}</p>
   </div>
+
+  <button (click)="backToTasks()" type="submit">Regresar a lista de tareas</button>
 
 </form>

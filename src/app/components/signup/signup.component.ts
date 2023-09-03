@@ -3,6 +3,7 @@ import { EmailValidator } from '@angular/forms';
 import { AuthService } from 'src/app/services/auth.service';
 import { UsersService } from 'src/app/services/users.service';
 import { User } from 'src/app/models/user.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -20,11 +21,16 @@ export class SignupComponent {
 
 
   constructor(
-    private userService: UsersService
+    private userService: UsersService,
+    private router:Router
   ){}
 
   createUser(){
-    this.userService.create(this.newUser).subscribe(response => {console.log(response);});
+    this.userService.create(this.newUser)
+    .subscribe(response => {
+      console.log(response);
+      this.router.navigate(['']);
+    });
   }
 
 }
